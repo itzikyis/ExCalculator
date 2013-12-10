@@ -2,9 +2,13 @@ package calc;
 
 public class Calculator 
 {
-	public int Calculator(String input) 
+	public int Calculator(String string) 
 	{
-		return 0;
+		if(string.isEmpty())
+		{	
+			return 0;
+		}
+		return Integer.parseInt(string);
 	}
 	
 	
