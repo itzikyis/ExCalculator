@@ -26,6 +26,11 @@ public class Calculator
 	{
 		findWorngInput(numbers);
 		
+		return calculateValue(numbers);
+	}
+	
+	private int calculateValue(String[] numbers)
+	{
 		int sum = 0;
 		for (String current: numbers) 
 		{
