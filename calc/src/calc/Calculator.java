@@ -2,9 +2,11 @@ package calc;
 
 public class Calculator 
 {
+	private final String dilimetar = ",|\n";
+	
 	public int Calculator(String input) 
 	{
-		String[] numbers = input.split(",|\n");
+		String[] numbers = input.split(dilimetar);
 		
 		if(isEmpty(input))
 		{	
