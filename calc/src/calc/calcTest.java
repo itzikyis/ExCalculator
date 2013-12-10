@@ -18,5 +18,11 @@ public class calcTest
 	{
 		assertEquals(Calculator.Calculator("1"), 1);
 	}
+	
+	@Test
+	public void twoNumbersCommaDelimitedReturnSum()
+	{
+		assertEquals(Calculator.Calculator("1,2"), 3);
+	}
 
 }
