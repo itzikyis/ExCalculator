@@ -18,13 +18,18 @@ public class Calculator
 		}
 		else
 		{
-			return getSum(numbers[0],numbers[1]);
+			return getSum(numbers);
 		}
 	}
 	
-	private int getSum(String numA, String numB)
+	private int getSum(String[] numbers)
 	{
-		return Integer.parseInt(numA) + Integer.parseInt(numB);
+		int sum = 0;
+		for (int current = 0; current < numbers.length; current++) 
+		{
+			sum += Integer.parseInt(numbers[current]);
+		}
+		return sum;
 	}
 	
 	private boolean isEmpty(String input)
