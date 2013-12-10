@@ -24,5 +24,11 @@ public class calcTest
 	{
 		assertEquals(Calculator.Calculator("1,2"), 3);
 	}
+	
+	@Test
+	public void twoNumbersNewLineDelimitedReturnSum()
+	{
+		assertEquals(Calculator.Calculator("1\n2"), 3);
+	}
 
 }
