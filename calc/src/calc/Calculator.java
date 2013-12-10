@@ -24,6 +24,18 @@ public class Calculator
 	
 	private int getSum(String[] numbers) throws Exception
 	{
+		findWorngInput(numbers);
+		
+		int sum = 0;
+		for (String current: numbers) 
+		{
+			sum += stringToInt(current);
+		}
+		return sum;
+	}
+	
+	private void findWorngInput(String[] numbers) throws Exception
+	{
 		for (String current: numbers) 
 		{
 			if(stringToInt(current) < 0)
@@ -31,13 +43,6 @@ public class Calculator
 				throw new Exception("negetive Exception");
 			}
 		}
-		
-		int sum = 0;
-		for (String current: numbers) 
-		{
-			sum += Integer.parseInt(current);
-		}
-		return sum;
 	}
 	
 	private boolean isEmpty(String input)
