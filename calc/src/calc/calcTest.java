@@ -36,5 +36,11 @@ public class calcTest
 	{
 		assertEquals(Calculator.Calculator("1,2,3"), 6);
 	}
+	
+	@Test(expected = Exception.class)
+	public void negativeInputReturnException()
+	{
+		Calculator.Calculator("-1");
+	}
 
 }
