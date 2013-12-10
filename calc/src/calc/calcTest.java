@@ -47,7 +47,7 @@ public class calcTest
 	@Test
 	public void ignoresNumbersGreaterThen1000() throws Exception
 	{
-		assertEquals(Calculator.Calculator("10,10,1000"), 20);
+		assertEquals(Calculator.Calculator("10,10,1001"), 20);
 	}
 
 }
