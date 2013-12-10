@@ -25,9 +25,9 @@ public class Calculator
 	private int getSum(String[] numbers)
 	{
 		int sum = 0;
-		for (int current = 0; current < numbers.length; current++) 
+		for (String current: numbers) 
 		{
-			sum += Integer.parseInt(numbers[current]);
+			sum += Integer.parseInt(current);
 		}
 		return sum;
 	}
