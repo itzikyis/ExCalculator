@@ -30,5 +30,11 @@ public class calcTest
 	{
 		assertEquals(Calculator.Calculator("1\n2"), 3);
 	}
+	
+	@Test
+	public void threeNumbersDilimetedBothWayReturnSum()
+	{
+		assertEquals(Calculator.Calculator("1,2,3"), 6);
+	}
 
 }
