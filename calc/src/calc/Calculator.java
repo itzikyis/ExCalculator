@@ -4,7 +4,7 @@ public class Calculator
 {
 	private final String dilimetar = ",|\n";
 	
-	public int Calculator(String input) 
+	public int Calculator(String input) throws Exception 
 	{
 		String[] numbers = input.split(dilimetar);
 		
@@ -22,8 +22,16 @@ public class Calculator
 		}
 	}
 	
-	private int getSum(String[] numbers)
+	private int getSum(String[] numbers) throws Exception
 	{
+		for (String current: numbers) 
+		{
+			if(stringToInt(current) < 0)
+			{
+				throw new Exception("negetive Exception");
+			}
+		}
+		
 		int sum = 0;
 		for (String current: numbers) 
 		{
